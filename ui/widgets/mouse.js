@@ -45,6 +45,7 @@ return $.widget( "ui.mouse", {
 		var that = this;
 
 		this.element
+		
 			// .on( "mousedown." + this.widgetName, function( event ) {
 			// 	return that._mouseDown( event );
 			// } )
@@ -68,6 +69,7 @@ return $.widget( "ui.mouse", {
 		this.element.off( "." + this.widgetName );
 		if ( this._mouseMoveDelegate ) {
 			this.document
+			
 				// .off( "mousemove." + this.widgetName, this._mouseMoveDelegate )
 				// .off( "mouseup." + this.widgetName, this._mouseUpDelegate );
 				.off( "pointermove." + this.widgetName, this._mouseMoveDelegate )
@@ -129,6 +131,7 @@ return $.widget( "ui.mouse", {
 		};
 
 		this.document
+		
 			// .on( "mousemove." + this.widgetName, this._mouseMoveDelegate )
 			// .on( "mouseup." + this.widgetName, this._mouseUpDelegate );
 			.on( "pointermove." + this.widgetName, this._mouseMoveDelegate )
@@ -188,6 +191,7 @@ return $.widget( "ui.mouse", {
 
 	_mouseUp: function( event ) {
 		this.document
+
 			// .off( "mousemove." + this.widgetName, this._mouseMoveDelegate )
 			// .off( "mouseup." + this.widgetName, this._mouseUpDelegate );
 			.off( "pointermove." + this.widgetName, this._mouseMoveDelegate )
